@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyectos de Franklin Purihuaman: web, datos y trabajos académicos.">
+    <title>Proyectos | Franklin Purihuaman</title>
+</head>
+<body>
+ 
+    <!-- Header -->
+    <header>
+        <a class="logo" href="index.html">Franklin Purihuaman</a>
+        <nav aria-label="Principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html" aria-current="page">Proyectos</a></li>
+                <li><a href="index.html#sobre-mi">Sobre mí</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+            <a class="boton" href="index.html#contacto">Contáctame</a>
+        </nav>
+    </header>
+ 
+    <!-- Cuerpo -->
+    <main>
+        <section class="seccion-proyectos" aria-labelledby="titulo-proyectos">
+            <a class="boton-volver" href="index.html">Volver a inicio</a>
+ 
+            <header class="encabezado-proyectos">
+                <p class="etiqueta">Portafolio</p>
+                <h1 id="titulo-proyectos">Todos mis proyectos</h1>
+                <p>Lo que he construido</p>
+            </header>
+ 
+            <div class="filtros-container" role="group" aria-label="Filtrar proyectos">
+                <button type="button" class="filtro-btn activo" data-filtro="todos" aria-pressed="true">Todos</button>
+                <button type="button" class="filtro-btn" data-filtro="web" aria-pressed="false">Web</button>
+                <button type="button" class="filtro-btn" data-filtro="datos" aria-pressed="false">Datos</button>
+                <button type="button" class="filtro-btn" data-filtro="academico" aria-pressed="false">Académico</button>
+            </div>
+ 
+            <ul id="grid-proyectos" class="proyectos-grid" aria-live="polite">
+                <!-- JS genera: <li><article class="tarjeta-proyecto"><h2>…</h2>…</article></li> -->
+            </ul>
+        </section>
+    </main>
+ 
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Franklin Purihuaman</p>
+    </footer>
+ 
+</body>
+</html>
+ 
